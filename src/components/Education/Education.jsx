@@ -2,7 +2,7 @@ import "./Education.css";
 import { motion } from "framer-motion";
 import { FaGraduationCap } from "react-icons/fa";
 import Sectiontitle from "../Sectiontitle/Sectiontitle";
-import { education } from "../../data/education";
+import { education } from "../../data/Education";
 
 function Education() {
   return (

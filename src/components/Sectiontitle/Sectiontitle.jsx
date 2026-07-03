@@ -1,4 +1,4 @@
-import "./SectionTitle.css";
+import "./Sectiontitle.css";
 import { motion } from "framer-motion";
 
 function SectionTitle({ title, subtitle }) {
