@@ -1,0 +1,20 @@
+.theme-toggle{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    z-index:9999;
+    box-shadow:0 10px 25px rgba(37,99,235,.4);
+}
+
+.light-mode{
+    background:#f8fafc;
+    color:#0f172a;
+}
