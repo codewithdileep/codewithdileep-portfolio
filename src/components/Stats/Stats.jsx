@@ -8,12 +8,12 @@ const stats = [
     title: "Years Experience",
   },
   {
-    number: 10,
+    number: 3,
     suffix: "+",
     title: "Projects",
   },
   {
-    number: 15,
+    number: 5,
     suffix: "+",
     title: "Technologies",
   },

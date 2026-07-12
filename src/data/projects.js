@@ -14,7 +14,7 @@ export const projects = [
       "Framer Motion"
     ],
 
-    github: "https://github.com/YOUR_GITHUB_USERNAME",
+    github: "https://github.com/codewithdileep",
 
     demo: "#",
 
@@ -30,13 +30,13 @@ export const projects = [
       "Developed a cloud-connected dashboard to visualize real-time IoT device data and operational metrics, enabling centralized monitoring and improved decision-making.",
 
     technologies: [
-      "C#",
-      ".NET",
-      "SQL Server",
-      "Azure"
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "AWS"
     ],
 
-    github: "#",
+    github: "https://github.com/codewithdileep",
 
     demo: "#",
 
@@ -62,7 +62,7 @@ export const projects = [
       "Jenkins"
     ],
 
-    github: "#",
+    github: "https://github.com/codewithdileep",
 
     demo: "#",
 

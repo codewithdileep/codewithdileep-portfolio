@@ -38,7 +38,7 @@ function About() {
           <h2>Hello! I'm Dileep 👋</h2>
 
           <p>
-            I'm a <strong>Software Engineer</strong> at
+            I'm a <strong>Associate System Engineer</strong> at
             <strong> Tata Consultancy Services (TCS)</strong>,
             currently contributing to the
             <strong> GE Vernova Advanced Distribution Management System (ADMS)</strong>.
@@ -46,7 +46,7 @@ function About() {
 
           <p>
             My primary expertise is in
-            <strong> C#, .NET, Angular, React, SQL Server</strong> and
+            <strong> Java, Python, React, SQL Server</strong> and
             <strong> Azure DevOps</strong>.
             I develop enterprise-grade backend solutions, implement new
             features, resolve production issues, and collaborate in Agile teams.
