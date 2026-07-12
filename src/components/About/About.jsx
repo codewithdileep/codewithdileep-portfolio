@@ -48,8 +48,7 @@ function About() {
             My primary expertise is in
             <strong> Java, Python, React, SQL Server</strong> and
             <strong> Azure DevOps</strong>.
-            I develop enterprise-grade backend solutions, implement new
-            features, resolve production issues, and collaborate in Agile teams.
+           I worked on enterprise-grade backend solutions, implemented new features, resolved production issues, and collaborated in Agile teams.
           </p>
 
           <p>

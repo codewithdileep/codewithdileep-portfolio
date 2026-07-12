@@ -1,14 +1,14 @@
 export const experiences = [
   {
     company: "Tata Consultancy Services",
-    role: "Software Engineer",
+    role: "Associate System Engineer",
     client: "GE Vernova",
     duration: "October 2025 - Present",
 
     project: "Advanced Distribution Management System (ADMS)",
 
     description:
-      "Working as a Software Engineer on enterprise-scale power distribution management software. Contributing to backend development, feature enhancements, defect resolution, code reviews, and Agile software delivery while collaborating with cross-functional teams.",
+      "Working as an Associate System Engineer on enterprise-scale power distribution management software. Contributing to backend development, feature enhancements, defect resolution, code reviews, and Agile software delivery while collaborating with cross-functional teams.",
 
     technologies: [
       "C#",
