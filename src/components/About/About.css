@@ -1,18 +1,31 @@
+/* =====================================
+   ABOUT SECTION
+===================================== */
+
 .about {
   padding: 100px 8%;
-  background: #111827;
-  color: white;
+  background: var(--bg-secondary);
+  color: var(--text-color);
+  transition: background 0.35s ease, color 0.35s ease;
 }
+
+/* =====================================
+   CONTAINER
+===================================== */
 
 .about-container {
   max-width: 1300px;
-  margin: auto;
+  margin: 70px auto 0;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 70px;
-  margin-top: 70px;
 }
+
+/* =====================================
+   LEFT
+===================================== */
 
 .about-left {
   flex: 1;
@@ -23,16 +36,25 @@
 .about-left img {
   width: 380px;
   height: 380px;
+
   object-fit: cover;
+
   border-radius: 20px;
-  border: 5px solid #2563eb;
-  box-shadow: 0 0 35px rgba(37, 99, 235, 0.35);
-  transition: 0.4s;
+
+  border: 5px solid var(--primary);
+
+  box-shadow: 0 0 35px rgba(37, 99, 235, .30);
+
+  transition: .35s ease;
 }
 
 .about-left img:hover {
-  transform: scale(1.03);
+  transform: scale(1.03) rotate(-1deg);
 }
+
+/* =====================================
+   RIGHT
+===================================== */
 
 .about-right {
   flex: 1.4;
@@ -41,15 +63,19 @@
 .about-right h2 {
   font-size: 2.3rem;
   margin-bottom: 25px;
-  color: #3b82f6;
+  color: var(--primary);
 }
 
 .about-right p {
-  color: #d1d5db;
+  color: var(--text-secondary);
   line-height: 1.9;
   margin-bottom: 20px;
   font-size: 1.05rem;
 }
+
+/* =====================================
+   CARDS
+===================================== */
 
 .about-cards {
   display: grid;
@@ -59,47 +85,90 @@
 }
 
 .about-card {
-  background: #1e293b;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 18px;
+
   padding: 25px;
-  border-radius: 15px;
+
   text-align: center;
-  transition: 0.35s;
+
   cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.05);
+
+  transition: all .35s ease;
+
+  box-shadow: var(--shadow);
+
 }
 
 .about-card:hover {
-  transform: translateY(-8px);
-  background: #2563eb;
+
+  transform: translateY(-10px);
+
+  background: var(--primary);
+
+  color: white;
+
 }
 
 .about-card svg {
+
   font-size: 2rem;
+
   margin-bottom: 15px;
+
 }
 
 .about-card h4 {
+
   font-size: 1rem;
+
+  font-weight: 600;
+
 }
 
-@media (max-width: 900px) {
+.about-card:hover svg,
+.about-card:hover h4 {
+
+  color: white;
+
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width:900px) {
 
   .about-container {
+
     flex-direction: column;
+
     text-align: center;
+
   }
 
   .about-left img {
+
     width: 280px;
+
     height: 280px;
+
   }
 
   .about-cards {
+
     grid-template-columns: 1fr;
+
   }
 
   .about-right h2 {
+
     font-size: 2rem;
+
   }
 
 }

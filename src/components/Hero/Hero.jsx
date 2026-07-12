@@ -27,8 +27,8 @@ function Hero() {
 
           <TypeAnimation
             sequence={[
-              "Software Engineer", 2000,
-              ".NET Developer", 2000,
+              "Associate System Engineer", 2000,
+              "Java Developer", 2000,
               "React Developer", 2000,
               "AI Enthusiast", 2000,
             ]}
@@ -40,7 +40,7 @@ function Hero() {
 
           <p>
             Passionate Software Engineer with experience in
-            C#, .NET, Angular, and enterprise application
+            Java, Python, React, and enterprise application
             development.
           </p>
 

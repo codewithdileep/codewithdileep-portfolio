@@ -38,23 +38,26 @@ function About() {
           <h2>Hello! I'm Dileep 👋</h2>
 
           <p>
-            I'm a Software Engineer at Tata Consultancy Services (TCS),
-            currently working on the GE Vernova Advanced Distribution
-            Management System (ADMS) project.
+            I'm a <strong>Software Engineer</strong> at
+            <strong> Tata Consultancy Services (TCS)</strong>,
+            currently contributing to the
+            <strong> GE Vernova Advanced Distribution Management System (ADMS)</strong>.
           </p>
 
           <p>
-            I specialize in developing enterprise applications using
-            C#, .NET, Angular, SQL Server, and Azure DevOps.
-            My work includes backend development, defect resolution,
-            feature enhancements, code reviews, and Agile software
-            development.
+            My primary expertise is in
+            <strong> C#, .NET, Angular, React, SQL Server</strong> and
+            <strong> Azure DevOps</strong>.
+            I develop enterprise-grade backend solutions, implement new
+            features, resolve production issues, and collaborate in Agile teams.
           </p>
 
           <p>
-            I'm passionate about building scalable software and
-            continuously learning Cloud and Artificial Intelligence
-            technologies.
+            I'm continuously improving my skills in
+            <strong> Artificial Intelligence</strong>,
+            <strong> Cloud Technologies</strong>, and
+            <strong> Modern Full-Stack Development</strong>
+            while building scalable enterprise applications.
           </p>
 
           <div className="about-cards">
@@ -66,17 +69,17 @@ function About() {
 
             <div className="about-card">
               <FaProjectDiagram />
-              <h4>Enterprise Projects</h4>
+              <h4>Enterprise Applications</h4>
             </div>
 
             <div className="about-card">
               <FaUsers />
-              <h4>Agile Teamwork</h4>
+              <h4>Agile Collaboration</h4>
             </div>
 
             <div className="about-card">
               <FaBrain />
-              <h4>AI Enthusiast</h4>
+              <h4>AI & Continuous Learning</h4>
             </div>
 
           </div>

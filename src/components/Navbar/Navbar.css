@@ -1,88 +1,228 @@
-.navbar{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:18px 8%;
-transition:.4s;
-z-index:999;
-backdrop-filter:blur(15px);
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1000;
+
+  backdrop-filter: blur(18px);
+  transition: all 0.35s ease;
+
+  background: transparent;
 }
 
-.scrolled{
-background:rgba(15,23,42,.95);
-box-shadow:0 8px 30px rgba(0,0,0,.25);
+/* =====================================
+   SCROLLED NAVBAR
+===================================== */
+
+.navbar.scrolled {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow);
 }
 
-.logo{
-font-size:28px;
-font-weight:700;
-color:#fff;
-cursor:pointer;
+/* Light Theme Navbar */
+
+body.light .navbar.scrolled {
+  background: rgba(255, 255, 255, 0.85);
 }
 
-.logo span{
-color:#3b82f6;
+/* =====================================
+   LOGO
+===================================== */
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
 }
 
-.nav-links{
-display:flex;
-gap:35px;
-list-style:none;
+.logo-white {
+  color: var(--text-color);
 }
 
-.nav-links a{
-color:white;
-text-decoration:none;
-font-weight:500;
-transition:.3s;
+.logo-blue {
+  color: var(--primary);
 }
 
-.nav-links a:hover{
-color:#3b82f6;
+/* =====================================
+   NAVIGATION LINKS
+===================================== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
 }
 
-.right-icons{
-display:flex;
-align-items:center;
-gap:15px;
+.nav-links li {
+  list-style: none;
 }
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* Underline Animation */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--primary);
+
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* =====================================
+   ACTIVE LINK
+===================================== */
+
+.nav-links a.active-link {
+  color: var(--primary);
+}
+
+.nav-links a.active-link::after {
+  width: 100%;
+}
+
+/* =====================================
+   RIGHT ICONS
+===================================== */
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* =====================================
+   BUTTONS
+===================================== */
 
 .theme-btn,
-.menu-btn{
-background:none;
-border:none;
-color:white;
-font-size:22px;
-cursor:pointer;
+.menu-btn {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  font-size: 20px;
+
+  color: var(--text-color);
+  background: var(--card-bg);
+
+  transition: all 0.3s ease;
+
+  box-shadow: var(--shadow);
 }
 
-.menu-btn{
-display:none;
+.theme-btn:hover,
+.menu-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px);
 }
 
-@media(max-width:768px){
+/* =====================================
+   MOBILE MENU BUTTON
+===================================== */
 
-.menu-btn{
-display:block;
+.menu-btn {
+  display: none;
 }
 
-.nav-links{
-position:absolute;
-top:80px;
-left:-100%;
-width:100%;
-background:#0f172a;
-flex-direction:column;
-text-align:center;
-padding:30px 0;
-transition:.4s;
+/* =====================================
+   MOBILE RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+
+    top: 80px;
+    left: -100%;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+    padding: 35px 0;
+
+    background: var(--bg-secondary);
+
+    transition: left 0.35s ease;
+
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
 }
 
-.nav-links.active{
-left:0;
-}
+/* =====================================
+   EXTRA SMALL DEVICES
+===================================== */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 16px 5%;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
 }

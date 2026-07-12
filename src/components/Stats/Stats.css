@@ -1,38 +1,98 @@
+/* =====================================
+   STATS SECTION
+===================================== */
+
+.stats {
+  background: var(--bg-secondary);
+  color: var(--text-color);
+  padding: 70px 8%;
+  transition: background .35s ease, color .35s ease;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.stats-container {
+
+  max-width: 1200px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 30px;
+
+}
+
+/* =====================================
+   CARD
+===================================== */
+
+.stat-card {
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--border-color);
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  transition: all .35s ease;
+
+  box-shadow: var(--shadow);
+
+}
+
+.stat-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: var(--primary);
+
+}
+
+/* =====================================
+   NUMBER
+===================================== */
+
+.stat-card h2 {
+
+  color: var(--primary);
+
+  font-size: 3rem;
+
+  margin-bottom: 12px;
+
+}
+
+/* =====================================
+   TITLE
+===================================== */
+
+.stat-card p {
+
+  color: var(--text-secondary);
+
+  font-size: 1.1rem;
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
 .stats{
-    background:#111827;
-    padding:70px 8%;
+
+padding:70px 5%;
+
 }
 
-.stats-container{
-    max-width:1200px;
-    margin:auto;
-
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:30px;
-}
-
-.stat-card{
-    background:#1f2937;
-    border-radius:18px;
-    padding:35px;
-    text-align:center;
-    transition:.3s;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-.stat-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 0 25px rgba(37,99,235,.25);
-}
-
-.stat-card h2{
-    color:#3b82f6;
-    font-size:3rem;
-    margin-bottom:12px;
-}
-
-.stat-card p{
-    color:#d1d5db;
-    font-size:1.1rem;
 }
